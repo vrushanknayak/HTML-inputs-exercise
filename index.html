@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Transport questions</title>
+
+    <h1> Are Subway unlimited cards necessary for NYC?</h1>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <form id='tablet-checkbox'>
+      <h2>How do you commute?</h2>
+
+      <p>
+        Select the form of transportation (check all that apply):
+      </p>
+      <input type="checkbox" id="Subway" value="Subway" data-price="1000" data-discount=".2">
+      <label for="Subway">Subway</label>
+      <br />
+      <input type="checkbox" id="Bus" value="Bus" data-price="2000" data-discount=".1">
+      <label for="Bus">Bus</label>
+      <br />
+      <input type="checkbox" id="Taxi" value="Taxi" data-price="3000" data-discount=".25">
+      <label for="Taxi">Taxi</label>
+      <br />
+      <input type="checkbox" id="Bicycle" value="Bicycle" data-price="4000" data-discount=".4">
+      <label for="Bicycle">Bicycle</label>
+      <br />
+    </form>
+
+    <form>
+      <h2>How many times a week do you commute?</h2>
+
+      <input type="text" list="commute-time">
+      <datalist id="commute-time">
+        <option value="1-3 times a week">
+        <option value="3-5 times a week">
+        <option value="5-7 times a week">
+        <option value="Once a week">
+        <option value="Twice a week">
+        <option value="Thrice or four times a week">
+        <option value="Five to seven times a week">
+      </datalist>
+    </form>
+
+    <form id="tablet-radio">
+      <h2>How long is your commute?</h2>
+      <p>
+        How much time does it take to travel from home to work?
+      </p>
+      <input type="radio" name="travel" value="15"> 15 minutes<br />
+      <input type="radio" name="travel" value="30"> 16-30 minutes<br />
+      <input type="radio" name="travel" value="45"> 31-45 minutes <br />
+      <input type="radio" name="travel" value="60"> 46-1 hour<br />
+      <input type="radio" name="travel" value="120"> Over an hour<br />
+
+    </form>
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+  </body>
+
+</html>
